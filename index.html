@@ -3,57 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Macfarlane Contact+ Support by Convodis Ltd</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
-        }
-        .container {
-            text-align: center;
-            padding: 20px;
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #666;
-            margin-bottom: 20px;
-        }
-        .support-email {
-            background-color: #007bff;
-            color: #ffffff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 20px;
-        }
-        .footer {
-            margin-top: 30px;
-            font-size: 0.8rem;
-        }
-    </style>
+    <title>Convodis Ltd | IT Consultancy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<div class="container">
-    <h1>Welcome to Macfarlane Contact+ Support</h1>
-    <p>We are here to provide you with support and assistance for the Macfarlane Contact+ Contact Center system.</p>
-    <a href="mailto:support@convodis.co.uk" class="support-email">Email Us: support@convodis.co.uk</a>
-    <div class="footer">
-        <p>Convodis Ltd</p>
+    <header>
+        <h1>Convodis IT Consultancy</h1>
+        <nav>
+            <ul>
+                <li><a href="#about" onclick="showSection('about')">About Us</a></li>
+                <li><a href="#services" onclick="showSection('services')">Services</a></li>
+                <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div id="about" class="content">
+            <section>
+                <h2>About Us</h2>
+                <p>At Convodis Ltd, we specialize in providing top-tier IT consultancy services tailored to meet the unique needs of your business. Our experienced team is dedicated to ensuring your technology infrastructure is robust, reliable, and efficient.</p>
+            </section>
+        </div>
+        <div id="services" class="content">
+            <section>
+                <h2>Our Services</h2>
+                <ul>
+                    <li><strong>Telecoms Platforms Support:</strong> We offer comprehensive support for both onsite and cloud-based telecoms platforms, including PBX and Contact Center solutions, ensuring seamless communication for your business.</li>
+                    <li><strong>Software Support:</strong> Our team provides expert support for a range of software, including Microsoft 365 and Macfarlane Contact+, to help you maximize productivity and efficiency.</li>
+                    <li><strong>Software Development:</strong> Specializing in .NET technologies, we deliver custom software development solutions that are tailored to your business needs, driving innovation and growth.</li>
+                    <li><strong>IT Repair Services:</strong> We offer reliable repair services for a variety of devices, including smartphones, tablets, and laptops, ensuring your technology is always in top working condition.</li>
+                </ul>
+            </section>
+        </div>
+        <div id="contact" class="content">
+            <section>
+                <h2>Contact Us</h2>
+                <p>For more information or to discuss how we can help your business, please get in touch:</p>
+                <p>Email: <a href="mailto:info@convodis.co.uk">info@convodis.co.uk</a></p>
+            </section>
+        </div>
     </div>
-</div>
-
+    <footer>
+        <p>&copy; 2024 Convodis Ltd. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
